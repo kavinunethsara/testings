@@ -47,10 +47,7 @@ var pageContrl = new PageController(sections);
 var navTouchElem = document.querySelector("html");
 var navTouchRegion = new ZingTouch.Region(navTouchElem);
 
-document.querySelector('.a').textContent = "blhs";
-
 navTouchRegion.bind(navTouchElem, 'swipe', function(e) {
-    document.querySelector('.a').textContent = "blh";
     if (e.currentDirection in Range(10, 170)) {
         pageContrl.nextPage();
     } else if (e.currentDirection in Range(190, 350)) {
