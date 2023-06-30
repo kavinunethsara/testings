@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.section {
+    position: fixed;
+    visibility: hidden;
+}
+
+.section.show {
+    visibility: visible;
+}
