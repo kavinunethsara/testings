@@ -59,6 +59,8 @@ window.onload = () => {
     pageContrl.pageAt(0);
 }
 
+var useScroll = true;
+
 ['wheel', 'keydown'].forEach((evnttype) => {
     document.addEventListener(evnttype, (evnt) => {
         if (evnt.type == 'keydown') {
@@ -68,6 +70,9 @@ window.onload = () => {
                 pageContrl.prevPage();
             }
         } else {
+            if (!useScroll) { return }
+            useScroll = false;
+            setTimeout(() => { useScroll = true; }, 500)
             if (evnt.deltaY < -3) {
                 pageContrl.prevPage();
             } else if (evnt.deltaY > 3) {

@@ -9,6 +9,7 @@ body{
 }
 
 .section {
+    display: block;
     position: fixed;
     visibility: hidden;
     height: 100%;
@@ -18,10 +19,26 @@ body{
     opacity: 0;
     transform: translateY(-10%);
     transition: 0.5s ease-in-out;
+    text-align: left;
+    padding: 5rem;
+    font-size: 30pt;
+    font-family: 'Ubuntu thin','SegoeUI','Arial','NotoSans';
 }
 
-.section.red {
+.section h1{
+    fonst-size: 40pt;
+}
+
+.section.black {
     background-color: rgb(0,0,0);
+}
+
+.section.blue {
+    background-color: #3D8BE6;
+}
+
+.section.green {
+    background-color: #4FC616;
 }
 
 .section.show {
