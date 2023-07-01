@@ -1,0 +1,42 @@
+nav{
+    display: flex;
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    flex-direction: row;
+}
+
+nav items{
+    display: flex;
+    flex-grow: 0;
+}
+
+nav items a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-left: 10pt;
+    padding: 15pt;
+    font-weight: bold;
+}
+
+nav items a:hover{
+    color: green;
+}
+
+nav items a.active{
+    color: green;
+    border-bottom: 4pt solid green;
+}
+
+nav logo{
+    display: flex;
+    flex-grow: 2;
+}
+
+nav logo h1{
+    margin-left: 10pt;
+    font-size: 18pt !important;
+    transform: none !important;
+    opacity: 1 !important;
+}
