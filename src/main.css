@@ -96,6 +96,11 @@ body{
     opacity: 1;
 }
 
+p.full{
+    width: 100%;
+    max-width: 100%;
+}
+
 content{
     display: flex;
     width: 100%;
@@ -156,4 +161,13 @@ content::after{
 
 html{
     height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+}
+
+a:hover {
+    color: lightgreen;
 }
