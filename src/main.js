@@ -1,5 +1,5 @@
 class SectController {
-    constructor(sections, doc) {
+    constructor(sections) {
         this.sections = sections;
         this.activeSection = undefined;
     }
@@ -59,16 +59,24 @@ class PageController {
         }
     }
 
+    readyToChange() {
+        let resetEvent = new Event("pageswitch");
+        document.dispatchEvent(resetEvent);
+    }
+
     nextPage() {
+        this.readyToChange()
         this.sectController.active = (this.sectController.active >= (this.sectController.sections.length - 1)) ? this.sectController.active : (sections.active + 1);
         this.updatePager();
     }
     prevPage() {
+        this.readyToChange()
         this.sectController.active = (this.sectController.active <= 0) ? this.sectController.active : (this.sectController.active - 1);
         this.updatePager();
     }
 
     pageAt(index) {
+        this.readyToChange()
         this.sectController.active = index;
         this.updatePager();
     }
@@ -83,10 +91,10 @@ var navTouchRegion = new ZingTouch.Region(documentElement);
 
 navTouchRegion.bind(documentElement, 'swipe', function(e) {
     console.log(e);
-    if (e.detail.data[0].currentDirection > 10 && e.detail.data[0].currentDirection < 170) {
-        pageContrl.nextPage();
-    } else if (e.detail.data[0].currentDirection > 190 && e.detail.data[0].currentDirection < 360) {
+    if (e.detail.data[0].currentDirection < 40 || e.detail.data[0].currentDirection > 320) {
         pageContrl.prevPage();
+    } else if (e.detail.data[0].currentDirection < 220 && e.detail.data[0].currentDirection > 140) {
+        pageContrl.nextPage();
     }
 });
 

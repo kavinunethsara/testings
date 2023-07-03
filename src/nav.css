@@ -1,7 +1,7 @@
 nav{
     display: flex;
     width: 100%;
-    color: white;
+    color: var(--text);
     background-color: transparent;
     flex-direction: row;
 }
@@ -14,19 +14,22 @@ nav items{
 nav items a{
     display: block;
     text-decoration: none;
-    color: white;
+    color: var(--text);
     margin-left: 10pt;
     padding: 15pt;
     font-weight: bold;
+    text-shadow: 0px 0px 9px rgba(0, 0, 0, 1),0px 0px 19px rgba(0, 0, 0, 1);
 }
 
 nav items a:hover{
-    color: green;
+    color: var(--primary);
+    filter: brightness(125%);
 }
 
 nav items a.active{
-    color: green;
-    border-bottom: 4pt solid green;
+    color: var(--primary);
+    border-bottom: 4pt solid var(--primary);
+    filter: brightness(125%);
 }
 
 nav logo{
@@ -39,4 +42,50 @@ nav logo h1{
     font-size: 18pt !important;
     transform: none !important;
     opacity: 1 !important;
+}
+
+@media (max-width:600px){
+
+    nav items{
+        position: fixed;
+        background-color: var(--back);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 5rem;
+        z-index: 998;
+        visibility: hidden;
+
+
+        flex-direction: column;
+        padding-top: 48pt;
+
+        transform: translateX(100%);
+        transition: 0.5s ease-out;
+    }
+
+
+    hamburger{
+        display: flex;
+        content: "";
+        visibility: show;
+        z-index: 999;
+        background-image: url('../img/hamburger.svg');
+        background-size: cover;
+        width: 18pt;
+        height: 18pt;
+        margin: 15pt;
+        filter: invert(100%);
+    }
+
+    nav items a{
+        width: 100%;
+        padding: 2rem;
+        border: none !important;
+    }
+
+    .show-menu items{
+        visibility: visible;
+        transform: translateX(0%);
+    }
 }
