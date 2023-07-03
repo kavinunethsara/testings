@@ -190,6 +190,10 @@ a:hover {
         align-items: center;
     }
 
+    content::after {
+        background: linear-gradient(0deg, var(--back), transparent 90%);
+    }
+
     content .bottom {
         display:flex;
         width: 100%;

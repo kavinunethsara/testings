@@ -64,28 +64,46 @@ nav logo h1{
         transition: 0.5s ease-out;
     }
 
+    nav logo{
+        text-shadow: 0px 0px 15pt rgba(0, 0, 0, 1);
+    }
 
     hamburger{
         display: flex;
         content: "";
         visibility: show;
         z-index: 999;
-        background-image: url('../img/hamburger.svg');
-        background-size: cover;
-        width: 18pt;
-        height: 18pt;
+        width: 33pt;
+        height: 33pt;
+        transform: translateY(-5pt);
         margin: 15pt;
         filter: invert(100%);
+        background-color: white;
+        border-radius: 10pt;
+
     }
+
+    hamburger::before{
+        display: block;
+        content: "";
+        position: fixed;
+        top: 8pt;
+        bottom: 8pt;
+        left: 8pt;
+        right: 8pt;
+        background-image: url('../img/hamburger.svg');
+        background-size: cover;
+    }
+
 
     hamburger::after{
         display: block;
         content: "";
         position: fixed;
-        top: -10pt;
-        bottom: -10pt;
-        right: -10pt;
-        left: -20pt;
+        top: 0pt;
+        bottom: 0pt;
+        right: 0pt;
+        left: -10pt;
         background-color: transparent;
     }
 

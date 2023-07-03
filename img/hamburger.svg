@@ -25,8 +25,8 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="8.2386813"
-     inkscape:cx="22.576429"
-     inkscape:cy="23.911594"
+     inkscape:cx="2.427573"
+     inkscape:cy="24.032972"
      inkscape:window-width="1366"
      inkscape:window-height="703"
      inkscape:window-x="0"
@@ -34,7 +34,77 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
-     id="defs2" />
+     id="defs2">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter1830"
+       x="-0.12908878"
+       y="-0.15150327"
+       width="1.2534663"
+       height="1.2974772">
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(255,255,255)"
+         result="flood"
+         id="feFlood1820" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1822" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1.1"
+         result="blur"
+         id="feGaussianBlur1824" />
+      <feOffset
+         dx="-0.1"
+         dy="-0.1"
+         result="offset"
+         id="feOffset1826" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="fbSourceGraphic"
+         id="feComposite1828" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix1832" />
+      <feFlood
+         id="feFlood1834"
+         flood-opacity="1"
+         flood-color="rgb(255,255,255)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite1836"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur1838"
+         in="composite1"
+         stdDeviation="1.1"
+         result="blur" />
+      <feOffset
+         id="feOffset1840"
+         dx="-0.1"
+         dy="-0.1"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite1842"
+         in="fbSourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
+  </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -42,7 +112,7 @@
     <g
        id="g941"
        transform="translate(0,-0.76124477)"
-       style="fill:#000000">
+       style="fill:#000000;">
       <rect
          style="fill:#000000;stroke-width:1.15277"
          id="rect234"
