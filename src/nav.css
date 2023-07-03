@@ -78,6 +78,17 @@ nav logo h1{
         filter: invert(100%);
     }
 
+    hamburger::after{
+        display: block;
+        content: "";
+        position: fixed;
+        top: -10pt;
+        bottom: -10pt;
+        right: -10pt;
+        left: -20pt;
+        background-color: transparent;
+    }
+
     nav items a{
         width: 100%;
         padding: 2rem;
