@@ -87,11 +87,11 @@ var documentElement = document.querySelector("html");
 var sections = new SectController(document.querySelectorAll(".section"));
 var pageContrl = new PageController(sections, documentElement);
 
-document.addEventListener('swiped-left', () => {
+document.addEventListener('swiped-right', () => {
     pageContrl.prevPage();
 });
 
-document.addEventListener('swiped-right', () => {
+document.addEventListener('swiped-left', () => {
     pageContrl.nextPage();
 });
 
