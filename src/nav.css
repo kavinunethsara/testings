@@ -18,7 +18,7 @@ nav items a{
     margin-left: 10pt;
     padding: 15pt;
     font-weight: bold;
-    text-shadow: 0px 0px 9px rgba(0, 0, 0, 1),0px 0px 19px rgba(0, 0, 0, 1);
+    text-shadow: 0px 0px 9pt rgba(0, 0, 0, 1);
 }
 
 nav items a:hover{
