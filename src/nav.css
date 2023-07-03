@@ -46,6 +46,12 @@ nav logo h1{
 
 @media (max-width:600px){
 
+    nav.solid{
+        background-color: var(--back);
+        z-index: 99;
+        position: fixed;
+    }
+
     nav items{
         position: fixed;
         background-color: var(--back);

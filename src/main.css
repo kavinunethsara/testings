@@ -41,6 +41,7 @@ body{
     filter: blur(20pt);
     transform: scale(150%);
     transition: 0.75s ease-out;
+    background-position: center;
 }
 
 .section.show::after{
@@ -119,6 +120,7 @@ content{
     height: 100%;
     flex-direction: column;
     padding: 30pt;
+    margin-top: 62pt;
 }
 
 pager{
@@ -205,7 +207,7 @@ a:hover {
         flex-direction: column;
         padding: 30pt;
 
-        max-height:100%;
+        max-height:calc(100% - 62pt);
         overflow: auto;
     }
 
