@@ -87,15 +87,12 @@ var documentElement = document.querySelector("html");
 var sections = new SectController(document.querySelectorAll(".section"));
 var pageContrl = new PageController(sections, documentElement);
 
-var navTouchRegion = new ZingTouch.Region(documentElement);
+document.addEventListener('swiped-left', () => {
+    pageContrl.prevPage();
+});
 
-navTouchRegion.bind(documentElement, 'swipe', function(e) {
-    console.log(e);
-    if (e.detail.data[0].currentDirection < 40 || e.detail.data[0].currentDirection > 320) {
-        pageContrl.prevPage();
-    } else if (e.detail.data[0].currentDirection < 220 && e.detail.data[0].currentDirection > 140) {
-        pageContrl.nextPage();
-    }
+document.addEventListener('swiped-right', () => {
+    pageContrl.nextPage();
 });
 
 window.onload = () => {
