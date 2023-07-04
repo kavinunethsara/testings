@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style291">.wheel {  }
+</style>
+  <defs
+     id="defs2" />
+  <g
+     id="layer1">
+    <path
+       id="rect290"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 59.527259,14.139492 c 14.648231,0 26.810593,15.97541 26.72364,28.090709 l -0.28279,39.401537 c -0.08695,12.115299 -11.792619,21.869332 -26.44085,21.869332 -14.64823,0 -26.527802,-9.754033 -26.440849,-21.869332 L 33.3692,42.230201 C 33.456153,30.114902 44.879029,14.139492 59.527259,14.139492 Z" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.34901;stroke-dasharray:none;stroke-opacity:1"
+       id="rect997"
+       width="9.8314199"
+       height="36.130875"
+       x="54.752945"
+       y="25.908382"
+       rx="6.2081819"
+       ry="5.5550356" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1001"
+       width="7.3525357"
+       height="13.291122"
+       x="55.992386"
+       y="26.582245"
+       rx="6.2081819"
+       ry="5.5550356"
+       class="wheel" />
+  </g>
+</svg>

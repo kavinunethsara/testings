@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg5"
+   xml:space="preserve"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="touchguesture.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="3.536195"
+     inkscape:cx="43.266845"
+     inkscape:cy="60.234235"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g338" /><defs
+     id="defs2" /><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"><g
+       style="fill:none"
+       id="g338"
+       transform="matrix(6.561,0,0,6.561,-18.195328,-25.829345)"><g
+         class="ColorScheme-Text  hand"
+         style="fill:currentColor;fill-opacity:1;stroke:none"
+         id="g319"
+         transform="translate(0.08168475,-0.11872803)"><path
+           d="m 10,20.9999 h 6.5 l 1.5,-6 c -2,-1.4999 -4.5,-2 -6,-2 V 9.29999 C 12,8 10,7.29991 10,9.29999 V 17 L 8.5,14.9999 c -1.5,-2 -3,0 -3,0 z"
+           id="path315" /><path
+           d="M 9.0001,12.3726 C 8.0933,11.7401 7.5,10.6893 7.5,9.49988 c 0,-1.933 1.567,-3.5 3.5,-3.5 1.933,0 3.5,1.567 3.5,3.5 0,0.97932 -0.4022,1.86482 -1.0505,2.50002 h 1.2927 C 15.2209,11.2849 15.5,10.425 15.5,9.49988 c 0,-2.48528 -2.0147,-4.5 -4.5,-4.5 -2.48528,0 -4.5,2.01472 -4.5,4.5 0,1.76692 1.01833,3.29592 2.5001,4.03232 z"
+           id="path317" /></g></g></g><style
+     type="text/css"
+     id="current-color-scheme">.hand {  }
+.ColorScheme-Text { color:#232629; }
+</style><style
+     type="text/css"
+     id="current-color-scheme-3">
+        .ColorScheme-Text {
+            color:#232629;
+        }
+    </style></svg>
