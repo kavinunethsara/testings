@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    width: 100%;
+    color: var(--text);
+    background-color: var(--dark);
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding: 20pt;
+
+    font-size: 15pt;
+}
+

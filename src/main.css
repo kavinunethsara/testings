@@ -3,17 +3,24 @@
     --secondary: #12fd37;
 
     --text: white;
+    --front: rgb(12, 12, 12);
     --back: black;
+    --bg: rgb(250, 255, 250);
+    --bg-translucent: rgba(255,255,255,0.7);
+    --dark: rgb(10, 15, 10);
 }
 
 * {
     box-sizing: border-box;
+
+    font-family: 'Ubuntu thin','SegoeUI','Arial','NotoSans';
 }
 
 body{
     display: block;
     padding: 0px;
     margin: 0px;
+    background-color: var(--bg);
 }
 
 .section {
@@ -28,7 +35,6 @@ body{
     opacity: 0;
     text-align: left;
     font-size: 15pt;
-    font-family: 'Ubuntu thin','SegoeUI','Arial','NotoSans';
 }
 
 .section::after{
@@ -65,7 +71,7 @@ body{
     background-image: url("../img/kandy.jpg");
 }
 
-.section h1,p{
+.section h1,.section p{
     transition: 0.25s ease-in-out;
     transform: translateY(100%);
     opacity: 0;
@@ -110,7 +116,7 @@ p.full{
     max-width: 100%;
 }
 
-text.primary{
+.primary{
     color: var(--primary)
 }
 
@@ -160,7 +166,7 @@ pager item.active{
     height: 10pt;
 }
 
-content::after{
+.section content::after{
     display: block;
     content: "";
     position: fixed;
@@ -185,6 +191,16 @@ a:hover {
     color: var(--secondary);
 }
 
+content.normal h1{
+    font-size: xxx-large;
+}
+
+content.normal p{
+    width: 100%;
+    max-width: 600pt;
+    font-size: 16pt;
+}
+
 @media (max-width: 600px){
     content {
         flex-direction: column;
@@ -192,7 +208,7 @@ a:hover {
         margin-top: 62pt;
     }
 
-    content::after {
+    .section content::after {
         background: linear-gradient(0deg, var(--back), transparent 90%);
     }
 
@@ -230,4 +246,12 @@ a:hover {
     pager itemcontainer {
         flex-direction: row;
     }
+}
+
+.center-items{
+    align-items: center;
+}
+
+p.center{
+    text-align: center;
 }

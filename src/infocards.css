@@ -1,0 +1,56 @@
+.grid{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 800pt;
+}
+
+.card{
+    display: flex;
+    padding: 20pt;
+    margin: 20pt;
+
+    transform: scale(100%);
+    transition: 0.25s ease-out;
+
+    background-color: var(--bg);
+    color: var(--front);
+    border-radius: 10pt;
+    background-size: cover;
+
+    position: relative;
+    flex-basis: calc(33.333% - 40pt);
+}
+
+.card title{
+    display: block;
+    width: 100%;
+    font-size: 15pt;
+    padding: 10pt;
+    margin-top: 100pt;
+
+    background-color: var(--bg-translucent);
+    backdrop-filter: blur(20pt);
+    color: var(--front);
+    text-align: center;
+    border-radius: 10pt;
+    box-shadow: 0pt 0pt 10pt 1pt var(--back);
+}
+
+.card:hover{
+    transform: scale(110%);
+}
+
+@media (max-width: 600px){
+    .grid{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card{
+        flex-basis: 100%;
+        margin: 5pt;
+    }
+}

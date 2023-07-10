@@ -4,11 +4,20 @@ nav{
     color: var(--text);
     background-color: transparent;
     flex-direction: row;
+    align-items: center;
+    top: 0;
+
+    font-size: 15pt;
+}
+
+nav.solid{
+    background-color: var(--dark);
 }
 
 nav items{
     display: flex;
     flex-grow: 0;
+    align-items: center;
 }
 
 nav items a{
@@ -29,6 +38,8 @@ nav items a:hover{
 nav items a.active{
     color: var(--primary);
     border-bottom: 4pt solid var(--primary);
+    padding-top:18pt;
+    padding-bottom: 14pt;
     filter: brightness(125%);
 }
 
@@ -81,7 +92,6 @@ nav logo h1{
         z-index: 999;
         width: 33pt;
         height: 33pt;
-        transform: translateY(-5pt);
         margin: 15pt;
         filter: invert(100%);
         background-color: white;
