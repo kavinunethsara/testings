@@ -1,3 +1,12 @@
+/* FONTS */
+
+@font-face {
+    font-family: "DancingScript";
+    src: url("Dancing_Script/DancingScript.ttf");
+    src: url("Dancing_Script/DancingScript.ttf") format("truetype");
+}
+
+/* CONTENTS */
 :root{
     --primary: #0bbf27;
     --secondary: #12fd37;
@@ -23,6 +32,8 @@ body{
     margin: 0px;
     background-color: var(--bg);
 }
+
+
 
 .section {
     display: block;
@@ -118,7 +129,8 @@ p.full{
 }
 
 .primary{
-    color: var(--primary)
+    color: var(--primary);
+    /* font-family: "DancingScript"; */
 }
 
 content{
@@ -265,4 +277,8 @@ content.normal p{
 
 p.center{
     text-align: center;
+}
+
+.limited-width{
+    max-width: 600pt;
 }
