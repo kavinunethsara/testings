@@ -15,21 +15,44 @@
     transform: scale(100%);
     transition: 0.25s ease-out;
 
-    background-color: var(--bg);
+    background-color: transparent;
     color: var(--front);
     border-radius: 10pt;
     background-size: cover;
+    cursor: pointer;
 
     position: relative;
     flex-basis: calc(33.333% - 40pt);
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .card title{
     display: block;
-    width: 100%;
+    width: calc(100% - 40pt);
     font-size: 15pt;
     padding: 10pt;
-    margin-top: 100pt;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+
+    background-color: var(--bg-translucent);
+    backdrop-filter: blur(20pt);
+    color: var(--front);
+    text-align: center;
+    border-radius: 10pt;
+    box-shadow: 0pt 0pt 10pt 1pt var(--back);
+    bottom: 20pt;
+}
+
+.card text{
+    display: block;
+    width: 100%;
+    margin-bottom: 55pt;
+    padding: 10pt;
+    font-size: 12pt;
+    transition: 0.5s ease-in-out;
+
+    opacity: 0;
 
     background-color: var(--bg-translucent);
     backdrop-filter: blur(20pt);
@@ -39,8 +62,24 @@
     box-shadow: 0pt 0pt 10pt 1pt var(--back);
 }
 
-.card:hover{
-    transform: scale(110%);
+.card:hover text{
+    opacity: 1;
+}
+
+.card:hover title{
+    font-size: 13pt;
+}
+
+.card img{
+    display:block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0pt;
+    width: 100%;
+
+    border-radius: 10pt;
 }
 
 @media (max-width: 600px){
@@ -52,5 +91,31 @@
     .card{
         flex-basis: 100%;
         margin: 5pt;
+    }
+
+    .card title{
+        position: relative;
+        text-align: center;
+        font-weight: bold;
+        text-align: center;
+        font-size: 15pt !important;
+
+
+        width: calc(100% - 20pt);
+        box-shadow: none;
+        margin: 10pt;
+        margin-bottom: -20pt;
+    }
+
+    .card text{
+        opacity: 1;
+        font-size: 12pt;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+
+    .card img{
+        position: relative;
+        margin-bottom: 20pt;
     }
 }

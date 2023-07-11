@@ -14,6 +14,7 @@
     box-sizing: border-box;
 
     font-family: 'Ubuntu thin','SegoeUI','Arial','NotoSans';
+    line-height: 1.5;
 }
 
 body{
@@ -245,6 +246,16 @@ content.normal p{
 
     pager itemcontainer {
         flex-direction: row;
+    }
+
+    .desktop-only{
+        display: none;
+    }
+}
+
+@media (min-width: 600){
+    .mobile-only{
+        display: none;
     }
 }
 
