@@ -1,9 +1,9 @@
 /* FONTS */
 
 @font-face {
-    font-family: "DancingScript";
-    src: url("Dancing_Script/DancingScript.ttf");
-    src: url("Dancing_Script/DancingScript.ttf") format("truetype");
+    font-family: "Raleway";
+    src: url("Raleway/Raleway.ttf");
+    src: url("Raleway/Raleway.ttf") format("truetype");
 }
 
 /* CONTENTS */
@@ -15,6 +15,7 @@
     --front: rgb(12, 12, 12);
     --back: black;
     --bg: rgb(250, 255, 250);
+    --bg-highlight: white;
     --bg-translucent: rgba(255,255,255,0.7);
     --dark: rgb(10, 15, 10);
 }
@@ -22,7 +23,7 @@
 * {
     box-sizing: border-box;
 
-    font-family: 'Ubuntu thin','SegoeUI','Arial','NotoSans';
+    font-family: 'Raleway','Ubuntu thin','SegoeUI','Arial','NotoSans';
     line-height: 1.5;
 }
 

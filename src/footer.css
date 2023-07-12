@@ -11,3 +11,29 @@ footer{
     font-size: 15pt;
 }
 
+footer span{
+    display: flex;
+    flex-grow: 2;
+    padding: 10pt;
+}
+
+footer div{
+    display: flex;
+    width:auto;
+    flex-grow: 0;
+}
+
+footer .showcase-grid{
+    padding: 0pt;
+    width: auto;
+}
+
+@media (max-width: 600px){
+    footer{
+        flex-direction: column;
+    }
+
+    footer .showcase-grid {
+        flex-direction: row !important;
+    }
+}

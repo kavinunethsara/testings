@@ -27,7 +27,7 @@
     overflow: hidden;
 }
 
-.card title{
+.card topic{
     display: block;
     width: calc(100% - 40pt);
     font-size: 15pt;
@@ -66,7 +66,7 @@
     opacity: 1;
 }
 
-.card:hover title{
+.card:hover topic{
     font-size: 13pt;
 }
 
@@ -76,10 +76,57 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0pt;
-    width: 100%;
+    left: -50%;
+    height: 100%;
 
     border-radius: 10pt;
+}
+
+
+.card.long{
+    flex-basis: 100%;
+    margin: 5pt;
+    flex-direction: row;
+    background-color: var(--bg-highlight);
+    align-items: flex-start;
+}
+
+.card.long topic{
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    text-align: left;
+    font-size: 15pt !important;
+    width: 100%;
+    backdrop-filter: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    box-shadow: none;
+    margin: 10pt;
+    background: transparent;
+}
+
+.card.long text{
+    opacity: 1;
+    font-size: 12pt;
+    text-align: left;
+    box-shadow: none;
+    margin-bottom: 0;
+    background: transparent;
+    backdrop-filter: none;
+    width: 100%;
+    padding-left: 20pt;
+
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.card.long img{
+    position: relative;
+    width: 150pt;
+    left: 0;
+    height: auto;
 }
 
 @media (max-width: 600px){
@@ -93,7 +140,7 @@
         margin: 5pt;
     }
 
-    .card title{
+    .card topic{
         position: relative;
         text-align: center;
         font-weight: bold;
@@ -112,10 +159,35 @@
         font-size: 12pt;
         box-shadow: none;
         margin-bottom: 0;
+        padding: 10pt;
     }
 
     .card img{
         position: relative;
         margin-bottom: 20pt;
+    }
+
+    .card.long{
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0pt;
+    }
+
+    .card.long img{
+        width: 100%;
+        height: auto;
+    }
+
+    .card.long text{
+        padding-left: 0;
+        margin-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+    .card.long topic{
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
     }
 }

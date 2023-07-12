@@ -1,0 +1,35 @@
+.showcase-grid{
+    display: flex;
+    flex-direction: row;
+    max-width: 900pt;
+    width: 100%;
+    padding: 20pt;
+    flex-wrap: wrap;
+}
+
+.showcase-grid .icon{
+    display: flex;
+    height: 80pt;
+    width: auto;
+    cursor: pointer;
+    margin: 30pt;
+}
+
+.showcase-grid.small .icon{
+    height: 40pt;
+    margin: 0;
+    margin-left: 20pt;
+}
+
+.showcase-grid.tiny .icon{
+    height: 30pt;
+    margin: 0;
+    margin-left: 10pt;
+}
+
+@media (max-width: 600px){
+    .showcase-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+}
