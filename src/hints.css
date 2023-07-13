@@ -70,3 +70,13 @@ svg .hand{
         transform-origin: 50% 100%;
     }
 }
+
+/* Small Labels */
+.label{
+    display: block;
+    padding: 5pt;
+    background-color: var(--primary);
+    border-radius: 20pt;
+    color: var(--text);
+    width: fit-content;
+}

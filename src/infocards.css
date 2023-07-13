@@ -89,6 +89,7 @@
     flex-direction: row;
     background-color: var(--bg-highlight);
     align-items: flex-start;
+    box-shadow: 0pt 0pt 10pt -5pt var(--dark);
 }
 
 .card.long topic{
@@ -171,6 +172,7 @@
         flex-wrap: wrap;
         align-items: center;
         margin: 0pt;
+        margin-bottom: 20pt;
     }
 
     .card.long img{

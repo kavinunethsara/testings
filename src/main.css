@@ -207,6 +207,8 @@ a:hover {
 
 content.normal h1{
     font-size: xxx-large;
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 
 content.normal p{
