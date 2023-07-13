@@ -217,6 +217,14 @@ content.normal p{
     font-size: 16pt;
 }
 
+blockquote{
+    width: 100%;
+    max-width: 600pt;
+    font-size: 16pt;
+    border-left: 4pt solid var(--primary);
+    padding: 20pt;
+}
+
 @media (max-width: 600px){
     content {
         flex-direction: column;

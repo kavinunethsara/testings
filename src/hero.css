@@ -1,0 +1,37 @@
+hero{
+    display: flex;
+    flex-direction: row;
+    min-height: 75vh;
+    width: 100%;
+    background-image: url("../img/dests/im1blur.jpeg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    padding: 20pt;
+
+    text-shadow: 0pt 0pt 10pt var(--dark);
+}
+
+hero .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+hero .container h1{
+    display: flex;
+    flex-grow: 2;
+    font-size: 38pt;
+    word-wrap: wrap;
+    text-align: left;
+    color: var(--text);
+    margin-right: 20pt;
+}
+
+hero .container iframe{
+    display: flex;
+    flex-grow: 0;
+    border-radius: 10pt;
+}

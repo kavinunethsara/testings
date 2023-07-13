@@ -14,6 +14,14 @@ nav.solid{
     background-color: var(--dark);
 }
 
+nav.absolute{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 nav items{
     display: flex;
     flex-grow: 0;
