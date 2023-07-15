@@ -327,3 +327,8 @@ p.center{
     height: auto;
     width: 100%;
 }
+
+.row{
+    display: flex;
+    max-width: 100%;
+}

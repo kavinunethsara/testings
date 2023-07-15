@@ -4,7 +4,7 @@
     max-width: 900pt;
     width: 100%;
     padding: 20pt;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .showcase-grid .icon{
@@ -27,9 +27,23 @@
     margin-left: 10pt;
 }
 
+.showcase-grid .caption{
+    display: flex;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 15pt;
+    margin-left: 5pt;
+}
+
 @media (max-width: 600px){
     .showcase-grid{
         flex-direction: column;
         align-items: center;
+    }
+
+    .showcase-grid.forced{
+        flex-direction: row;
     }
 }
