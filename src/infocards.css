@@ -130,6 +130,14 @@
     height: auto;
 }
 
+.card.long a{
+    display: flex;
+    padding: 5pt;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10pt;
+}
+
 @media (max-width: 600px){
     .grid{
         width: 100%;
