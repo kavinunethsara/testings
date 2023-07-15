@@ -1,3 +1,6 @@
+
+// Classes
+
 class SectController {
     constructor(sections) {
         this.sections = sections;
@@ -82,44 +85,88 @@ class PageController {
     }
 }
 
+
+//Set-Up
+
 var documentElement = document.querySelector("html");
 
 var sections = new SectController(document.querySelectorAll(".section"));
 var pageContrl = new PageController(sections, documentElement);
 
-document.addEventListener('swiped-right', () => {
-    pageContrl.prevPage();
-});
+const animatables = document.querySelectorAll('.animatable')
 
-document.addEventListener('swiped-left', () => {
-    pageContrl.nextPage();
-});
+// on Scroll Animations
 
-window.onload = () => {
-    pageContrl.pageAt(0);
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animating')
+        }
+            else {
+                entry.target.classList.remove('animating')
+            }
+
+    })
+}, { threshold: 0.5 });
+
+// Loop over each animatable and introduce each to the animation observer
+
+for (let i = 0; i < animatables.length; i++) {
+    const elements = animatables[i];
+
+    observer.observe(elements);
 }
 
-var useScroll = true;
+// On pageunload animation
+window.onbeforeunload = () => {
+    document.body.classList.add("out");
+}
 
-['wheel', 'keydown'].forEach((evnttype) => {
-    document.addEventListener(evnttype, (evnt) => {
-        if (evnt.type == 'keydown') {
-            if (evnt.code == 'PageDown' || evnt.code == 'ArrowDown') {
-                pageContrl.nextPage();
-            } else if (evnt.code == "PageUp" || evnt.code == 'ArrowUp') {
-                pageContrl.prevPage();
-            }
-        } else {
-            if (!useScroll) { return }
-            useScroll = false;
-            setTimeout(() => { useScroll = true; }, 500)
-            if (evnt.deltaY < -3) {
-                pageContrl.prevPage();
-            } else if (evnt.deltaY > 3) {
-                pageContrl.nextPage();
-            }
-        }
-    })
-});
+// Page slider related set up
 
+const setUpPages = () => {
+
+    //Set up swipe controls
+    document.addEventListener('swiped-right', () => {
+        pageContrl.prevPage();
+    });
+
+    document.addEventListener('swiped-left', () => {
+        pageContrl.nextPage();
+    });
+
+    // Initialize the site by setting the page to the first one.
+
+    window.onload = () => {
+        pageContrl.pageAt(0);
+    }
+
+    // This tracks whether scroll input should be acceppted. It's set to false for a certain time limit in the following code to limit inout per second
+    var useScroll = true;
+
+    // Takes scroll and key input, using them to switch pages
+    ['wheel', 'keydown'].forEach((evnttype) => {
+        document.addEventListener(evnttype, (evnt) => {
+            if (evnt.type == 'keydown') {
+                if (evnt.code == 'PageDown' || evnt.code == 'ArrowDown') {
+                    pageContrl.nextPage();
+                } else if (evnt.code == "PageUp" || evnt.code == 'ArrowUp') {
+                    pageContrl.prevPage();
+                }
+            } else {
+                if (!useScroll) { return }
+                useScroll = false;
+                setTimeout(() => { useScroll = true; }, 500)
+                if (evnt.deltaY < -3) {
+                    pageContrl.prevPage();
+                } else if (evnt.deltaY > 3) {
+                    pageContrl.nextPage();
+                }
+            }
+        })
+    });
+}
+
+// Set up pages only if any slider pages are found
+if (sections.sections.length != 0) setUpPages();
 
