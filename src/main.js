@@ -93,21 +93,24 @@ var documentElement = document.querySelector("html");
 var sections = new SectController(document.querySelectorAll(".section"));
 var pageContrl = new PageController(sections, documentElement);
 
-const animatables = document.querySelectorAll('.animatable')
+const animatables = document.querySelectorAll('.animatable');
 
 // on Scroll Animations
 
+//Make First Element Visible
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
+
+        console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('animating')
+        } else {
+            entry.target.classList.remove('animating')
         }
-            else {
-                entry.target.classList.remove('animating')
-            }
 
-    })
-}, { threshold: 0.5 });
+    });
+}, { threshold: 0.1 });
 
 // Loop over each animatable and introduce each to the animation observer
 

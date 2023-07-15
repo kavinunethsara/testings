@@ -139,6 +139,7 @@
     .card{
         flex-basis: 100%;
         margin: 5pt;
+        box-shadow: 0pt 0pt 10pt -5pt var(--dark);
     }
 
     .card topic{
@@ -166,6 +167,12 @@
     .card img{
         position: relative;
         margin-bottom: 20pt;
+        left: unset;
+        right: unset;
+        bottom: unset;
+        top: unset;
+        height:auto;
+        width: 100%;
     }
 
     .card.long{
