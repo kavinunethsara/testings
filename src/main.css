@@ -251,6 +251,18 @@ blockquote{
         overflow: auto;
     }
 
+
+    content .flat {
+        display:flex;
+        width: 100%;
+
+        flex-direction: column;
+        padding: 5pt;
+
+        max-height:100%;
+        overflow: auto;
+    }
+
     .section h1 {
         font-size: 10vw;
     }
