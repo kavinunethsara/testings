@@ -298,7 +298,6 @@ blockquote{
 }
 
 @media screen and (orientation: landscape) and (max-height: 500px){
-
     .landscape_only{
         display: flex !important;
     }
