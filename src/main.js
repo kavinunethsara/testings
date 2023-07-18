@@ -141,9 +141,7 @@ const setUpPages = () => {
 
     // Initialize the site by setting the page to the first one.
 
-    window.onload = () => {
-        pageContrl.pageAt(0);
-    }
+    pageContrl.pageAt(0);
 
     // This tracks whether scroll input should be acceppted. It's set to false for a certain time limit in the following code to limit inout per second
     var useScroll = true;
