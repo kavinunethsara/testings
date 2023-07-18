@@ -66,6 +66,7 @@ body{
 .section.show::after{
     filter: blur(0pt);
     transform: scale(100%);
+    will-change: transform, filter;
 }
 
 .section.sect1::after {
@@ -122,6 +123,8 @@ body{
 .section.show {
     visibility: visible;
     opacity: 1;
+
+    will-change: visibility, opacity;
 }
 
 p.full{
