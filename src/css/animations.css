@@ -4,9 +4,13 @@
     transition: 0.5s ease-out;
 }
 
+.animatable.short{
+    transform: translateX(-90%);
+}
+
 .animatable.animating{
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateX(0%) !important;
 }
 
 .card.animatable{

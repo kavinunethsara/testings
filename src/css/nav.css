@@ -115,7 +115,7 @@ nav logo h1{
         bottom: 8pt;
         left: 8pt;
         right: 8pt;
-        background-image: url('../img/hamburger.svg');
+        background-image: url('../../img/hamburger.svg');
         background-size: cover;
     }
 
