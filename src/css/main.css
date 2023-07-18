@@ -107,6 +107,7 @@ p{
     transition: 0.25s ease-in-out;
     transform: translateY(100%);
     opacity: 0;
+    color: var(--text);
 }
 
 .section h1{
