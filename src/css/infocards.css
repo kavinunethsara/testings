@@ -25,6 +25,7 @@
     flex-basis: calc(33.333% - 40pt);
     flex-direction: column;
     overflow: hidden;
+    min-width: 200pt;
 }
 
 .card topic{
@@ -148,6 +149,8 @@
         flex-basis: 100%;
         margin: 5pt;
         box-shadow: 0pt 0pt 10pt -5pt var(--dark);
+
+        min-width: none;
     }
 
     .card topic{

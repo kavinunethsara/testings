@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: "Raleway";
-    src: url("Raleway/Raleway.ttf");
-    src: url("Raleway/Raleway.ttf") format("truetype");
+    src: url("../Raleway/Raleway.ttf");
+    src: url("../Raleway/Raleway.ttf") format("truetype");
 }
 
 /* CONTENTS */
@@ -70,19 +70,19 @@ body{
 }
 
 .section.sect1::after {
-    background-image: url("../img/waterfall.jpg");
+    background-image: url("../../img/waterfall.jpg");
 }
 
 .section.sect2::after {
-    background-image: url("../img/forest.jpg");
+    background-image: url("../../img/forest.jpg");
 }
 
 .section.sect3::after {
-    background-image: url("../img/sigiriya.jpg");
+    background-image: url("../../img/sigiriya.jpg");
 }
 
 .section.sect4::after {
-    background-image: url("../img/kandy.jpg");
+    background-image: url("../../img/kandy.jpg");
 }
 
 .section h1,.section p{

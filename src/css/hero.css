@@ -2,7 +2,7 @@ hero{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url("../img/dests/im1blur.jpeg");
+    background-image: url("../../img/dests/im1blur.jpeg");
     background-size: cover;
     background-position: center;
     align-items: center;
