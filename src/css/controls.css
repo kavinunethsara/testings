@@ -1,0 +1,46 @@
+.button{
+    display: flex;
+    flex-grow: 1;
+
+    padding: 5pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    margin: 10pt;
+    background-color: transparent;
+    color: var(--front);
+
+    border: 2pt solid var(--front);
+
+    border-radius: 0pt;
+    text-align: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.25s ease-out;
+}
+
+.button:hover{
+    border-radius: 5pt;
+    background-color: var(--front);
+    color: var(--bg);
+}
+
+.button.extend{
+    width: calc(100% - 20pt);
+}
+
+.button.disabled{
+    opacity: 0.65;
+}
+
+.button.inline{
+    display: inline;
+    margin: 2pt;
+}
+
+@media screen and (max-width:600px){
+    .button{
+        background-color: var(--front);
+        color: var(--bg);
+        border-radius: 5pt;
+    }
+}

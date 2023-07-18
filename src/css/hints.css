@@ -73,10 +73,13 @@ svg .hand{
 
 /* Small Labels */
 .label{
-    display: block;
+    display: flex;
     padding: 5pt;
+    padding-left: 8pt;
+    padding-right: 8pt;
     background-color: var(--primary);
     border-radius: 20pt;
     color: var(--text);
     width: fit-content;
+    align-items: center;
 }
