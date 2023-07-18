@@ -89,6 +89,7 @@ class PageController {
 //Set-Up
 
 var documentElement = document.querySelector("html");
+console.log(document.querySelectorAll(".section"));
 
 var sections = new SectController(document.querySelectorAll(".section"));
 var pageContrl = new PageController(sections, documentElement);
