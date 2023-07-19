@@ -148,7 +148,6 @@
     .card{
         flex-basis: 100%;
         margin: 5pt;
-        box-shadow: 0pt 0pt 10pt -5pt var(--dark);
 
         min-width: none;
     }
@@ -209,5 +208,11 @@
         padding-left: 0;
         margin-left: 0;
         text-align: center;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .card.long{
+        box-shadow: 0pt 0pt 20pt 5pt var(--dark);
     }
 }
